@@ -21,3 +21,4 @@ class VehicleFactory
       when 'car' then @_vehicleClass = Car
       when 'truck' then @_vehicleClass = Truck
     new @_vehicleClass options
+
