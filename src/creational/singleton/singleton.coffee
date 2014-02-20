@@ -1,12 +1,8 @@
 class Singleton
 
+    @getInstance: -> @_instance ?= new @
     @_instance: null
-
-    @getInstance: ->
-      @_instance ?= new @
-
 
 class Unique extends Singleton
 
-  constructor: ->
-    @key = Math.random()
+  constructor: -> @key = Math.random()

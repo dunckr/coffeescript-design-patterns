@@ -17,7 +17,7 @@ class NullSorter
 class ReverseSorter
 
   sort: (data, order) ->
-    for i in [0..data.length/2-1]
+    for i in [0...data.length/2]
       tmp = data[i]
       data[i] = data[data.length-i-1]
       data[data.length-i-1] = tmp
