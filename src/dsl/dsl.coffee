@@ -9,8 +9,8 @@ class DSL
       @_runCommand command.split ' '
 
   _runCommand: (command) ->
-    @[command[0]].apply command[0], command[1..]
+    @[command[0]].apply @, command[1..]
 
-  add: (numbers...) =>
+  add: (numbers...) ->
     @count += Number number for number in numbers
 
