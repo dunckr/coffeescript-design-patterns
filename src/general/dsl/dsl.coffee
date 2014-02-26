@@ -13,5 +13,3 @@ class DSL
 
   _runCommand: (command) ->
     @[command[0]].apply @, command[1..]
-
-

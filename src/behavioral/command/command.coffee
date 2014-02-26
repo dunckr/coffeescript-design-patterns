@@ -10,4 +10,4 @@ class CarManager
     "You have successfully booked a viewing of #{model} ( #{id} )"
 
   @execute: (args...) ->
-    @[args[0]].apply @, [].slice.call args,1
+    @[args[0]].apply @, args[1..]
